@@ -34,4 +34,8 @@ class loginAction extends baseAction
         }
     }
 
+    public function action_dd(){
+
+    }
+
 }

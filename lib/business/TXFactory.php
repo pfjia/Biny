@@ -8,7 +8,7 @@ class TXFactory {
      *
      * @var array
      */
-    private static $objects = array();
+    private static $objects = [];
 
     /**
      * dynamic create object
@@ -36,7 +36,6 @@ class TXFactory {
                 self::$objects[$alias] = new $class();
             }
         }
-
         return self::$objects[$alias];
     }
 }

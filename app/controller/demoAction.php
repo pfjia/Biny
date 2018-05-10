@@ -8,11 +8,13 @@ class demoAction extends baseAction
     // 权限配置
     protected function privilege()
     {
-        return array(
-            'login_required' => array(
+        return [
+            //key:权限验证方法
+            //value:actions需要权限验证的action
+            'login_required' => [
                 'actions' => '*', //绑定action
-            ),
-        );
+            ],
+        ];
     }
 
     /**
@@ -21,7 +23,7 @@ class demoAction extends baseAction
     public function action_index()
     {
         $view = $this->display('demo/demo');
-        $view->title = "Biny演示页面";
+        $view->title = "caotaniangde gan si ni ";
         return $view;
     }
 }

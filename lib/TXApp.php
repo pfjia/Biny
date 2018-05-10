@@ -26,6 +26,9 @@ class TXApp
     public static $base;
 
     public static $base_root;
+    /**
+     * @var string 项目app目录的绝对路径
+     */
     public static $app_root;
     public static $view_root;
     public static $log_root;
